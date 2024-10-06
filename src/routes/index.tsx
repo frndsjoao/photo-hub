@@ -1,8 +1,8 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../screens/home";
-import LoginScreen from "../screens/login";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from '../screens/home';
+import LoginScreen from '../screens/login';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -11,6 +11,8 @@ function TabRoutes() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="History" component={HomeScreen} />
+      <Tab.Screen name="Teste" component={HomeScreen} />
     </Tab.Navigator>
   );
 }
